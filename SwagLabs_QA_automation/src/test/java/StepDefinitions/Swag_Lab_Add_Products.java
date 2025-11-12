@@ -112,11 +112,11 @@ public class Swag_Lab_Add_Products extends Base {
 		driver.findElement(By.xpath(prop.getProperty("SwagClickOnHomeButton"))).click();
    	    logger.info("Click on Home Button");
    	    Thread.sleep(500);
-		//brakdown 
+		
 	}
     
 	@After
-	public void TearDown(Scenario scenario)
+	public void TearDown(Scenario scenario)   //allure screenshots
 	{
 	       if(scenario.isFailed())
 	       {
